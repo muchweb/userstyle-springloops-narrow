@@ -1,0 +1,138 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("springloops.io") {
+
+    body,
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        font: inherit;
+    }
+
+    table.table th,
+    table.table td {
+        line-height: inherit;
+    }
+
+    .table._tasks td {
+        padding: 0;
+    }
+
+    .btn-wrap .btn {
+        background-image: none;
+        box-shadow: none;
+        border: 1px solid #999;
+        border-radius: 0;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], textarea, select {
+        transition: none;
+    }
+
+    .nav-dropdown {
+        transition: none;
+    }
+
+    .right-wrap, #sidebar {
+        transition: none;
+    }
+
+    .BigBen .go-home {
+        left: 0px;
+        right: 0px;
+        top: -10px;
+        height: 10px;
+    }
+
+    .BigBen .go-home > a {
+        height: 10px;
+        padding: 0;
+        line-height: 100%;
+        color: inherit;
+        background: none;
+        box-shadow: none;
+        border: none;
+        background: black;
+        color: white;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .BigBen .go-home > a > strong {
+        display: none;
+    }
+
+    .BigBen._project {
+        top: 10px;
+        right: 0;
+        left: 32px;
+    }
+
+    .BigBen._project #sideBar {
+        top: -10px;
+        left: -32px;
+        width: 32px;
+    }
+
+    .BigBen #sideBar {
+        overflow: hidden;
+    }
+
+    .BigBen #sideBar:hover {
+        overflow: visible;
+    }
+
+    .BigBen > header {
+        height: 20px;
+        overflow: hidden;
+        background : darkblue;
+
+    }
+    .BigBen > header:hover {
+        height: auto;
+        background : white;
+        box-shadow: 0 2px 8px yellow;
+        overflow: visible;
+    }
+
+    .springloops .BigBen > header .account-name {
+        box-shadow: none;
+    }
+
+    .servicesBox {
+        display: none;
+    }
+
+    .right-wrap,
+    .left-wrap {
+        top: 20px;
+    }
+
+    .left-wrap .leftContentWrap {
+        padding: 0;
+        max-height: none !important;
+    }
+
+    .window-size {
+        width: auto;
+    }
+
+    #sideBar .sidebar-elements > ul li:before {
+        display: none;
+    }
+
+    #sideBar .sidebar-elements,
+    #sideBar .sidebar-elements > ul,
+    #sideBar .sidebar-elements > ul li {
+        width: auto !important;
+        font-size: inherit;
+        overflow: visible;
+        background: #383A3C;
+    }
+
+    #sideBar .sidebar-elements > ul li:hover {
+        background: black;
+    }
+}
