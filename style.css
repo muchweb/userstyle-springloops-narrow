@@ -2,6 +2,7 @@
 
 @-moz-document domain("springloops.io") {
 
+    /* Using default system font*/
     body,
     textarea,
     input[type="text"],
@@ -11,15 +12,16 @@
         font: inherit;
     }
 
+    /* Narrow tables to save space */
     table.table th,
     table.table td {
         line-height: inherit;
     }
-
     .table._tasks td {
         padding: 0;
     }
 
+    /* Simple Flat "buttons" */
     .btn-wrap .btn {
         background-image: none;
         box-shadow: none;
@@ -27,7 +29,11 @@
         border-radius: 0;
     }
 
-    input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
         transition: none;
     }
 
@@ -39,13 +45,16 @@
         transition: none;
     }
 
+     /* Narrow top "all projects" link */
+    .BigBen {
+        top: 0px;
+    }
     .BigBen .go-home {
         left: 0px;
         right: 0px;
         top: -10px;
         height: 10px;
     }
-
     .BigBen .go-home > a {
         height: 10px;
         padding: 0;
@@ -59,16 +68,15 @@
         font-size: 9px;
         text-align: center;
     }
-
     .BigBen .go-home > a > strong {
         display: none;
     }
-
     .BigBen._project {
         top: 10px;
         right: 0;
         left: 32px;
     }
+
 
     .BigBen._project #sideBar {
         top: -10px;
@@ -115,10 +123,6 @@
         max-height: none !important;
     }
 
-    .window-size {
-        width: auto;
-    }
-
     #sideBar .sidebar-elements > ul li:before {
         display: none;
     }
@@ -134,5 +138,10 @@
 
     #sideBar .sidebar-elements > ul li:hover {
         background: black;
+    }
+
+    /* No max width */
+    .window-size {
+        width: auto;
     }
 }
