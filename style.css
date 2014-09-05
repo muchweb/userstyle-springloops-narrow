@@ -105,7 +105,9 @@
         overflow: visible;
     }
 
-    .springloops .BigBen > header .account-name {
+     /* Hidint project colour-coded strip */
+    .springloops .BigBen > header .account-name,
+    .springloops .BigBen > header nav{
         box-shadow: none;
     }
 
@@ -143,5 +145,18 @@
     /* No max width */
     .window-size {
         width: auto;
+    }
+
+    body {
+        background-color: #777;
+    }
+
+    #bigBen {
+       background-color: #EeEeEe;
+    }
+
+    .left-wrap,
+    .right-wrap {
+        background: transparent;
     }
 }
