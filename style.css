@@ -10,6 +10,32 @@
     input[type="password"],
     select {
         font: inherit;
+        background: #222;
+        color: #eee;
+    }
+
+
+    .event-details .event-title {
+        color: inherit;
+        font-size: inherit;
+
+    }
+
+    h2 a ,
+    .project-tile h2 a {
+        color: inherit;
+    }
+
+    a {
+        color: lightgreen;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: green;
+    }
+
+    .BigBen {
+        background: inherit;
     }
 
     /* Narrow tables to save space */
@@ -45,7 +71,7 @@
         transition: none;
     }
 
-     /* Narrow top "all projects" link */
+    /* Narrow top "all projects" link */
     .BigBen {
         top: 0px;
     }
@@ -60,7 +86,6 @@
         padding: 0;
         line-height: 100%;
         color: inherit;
-        background: none;
         box-shadow: none;
         border: none;
         background: black;
@@ -92,11 +117,11 @@
         overflow: visible;
     }
 
+
     .BigBen > header {
         height: 20px;
         overflow: hidden;
-        background : darkblue;
-
+        background : #383A3C;
     }
     .BigBen > header:hover {
         height: auto;
@@ -105,7 +130,7 @@
         overflow: visible;
     }
 
-     /* Hidint project colour-coded strip */
+    /* Hidint project colour-coded strip */
     .springloops .BigBen > header .account-name,
     .springloops .BigBen > header nav{
         box-shadow: none;
@@ -147,16 +172,35 @@
         width: auto;
     }
 
-    body {
-        background-color: #777;
-    }
-
-    #bigBen {
-       background-color: #EeEeEe;
-    }
 
     .left-wrap,
     .right-wrap {
         background: transparent;
+    }
+
+    body.fullScreen .BigBen._project #sideBar {
+        top: 0;
+    }
+
+    #sideBar .sidebar-elements > ul li {
+        transition: none;
+    }
+
+    .btn-wrap > input[type="text"],
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+        margin: 0;
+        padding: 4px;
+        vertical-align: top;
+        color: white;
+        background: black;
+        line-height: 0;
+
+        border: solid yellow 1px;
+        font-size: 12px;
+        transition: none;
     }
 }
