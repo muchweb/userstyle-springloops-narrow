@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("springloops.io") {
-
+    
     /* Using default system font*/
     body,
     textarea,
@@ -13,19 +13,19 @@
         background: #222;
         color: #eee;
     }
-
-
+    
+    
     .event-details .event-title {
         color: inherit;
         font-size: inherit;
-
+        
     }
-
+    
     h2 a ,
     .project-tile h2 a {
         color: inherit;
     }
-
+    
     a {
         color: lightgreen;
         text-decoration: underline;
@@ -33,11 +33,11 @@
     a:hover {
         color: green;
     }
-
+    
     .BigBen {
         background: inherit;
     }
-
+    
     /* Narrow tables to save space */
     table.table th,
     table.table td {
@@ -46,7 +46,7 @@
     .table._tasks td {
         padding: 0;
     }
-
+    
     /* Simple Flat "buttons" */
     .btn-wrap .btn {
         background-image: none;
@@ -54,7 +54,7 @@
         border: 1px solid #999;
         border-radius: 0;
     }
-
+    
     input[type="text"],
     input[type="email"],
     input[type="password"],
@@ -62,15 +62,15 @@
     select {
         transition: none;
     }
-
+    
     .nav-dropdown {
         transition: none;
     }
-
+    
     .right-wrap, #sidebar {
         transition: none;
     }
-
+    
     /* Narrow top "all projects" link */
     .BigBen {
         top: 0px;
@@ -101,23 +101,23 @@
         right: 0;
         left: 32px;
     }
-
-
+    
+    
     .BigBen._project #sideBar {
         top: -10px;
         left: -32px;
         width: 32px;
     }
-
+    
     .BigBen #sideBar {
         overflow: hidden;
     }
-
+    
     .BigBen #sideBar:hover {
         overflow: visible;
     }
-
-
+    
+    
     .BigBen > header {
         height: 20px;
         overflow: hidden;
@@ -129,31 +129,31 @@
         box-shadow: 0 2px 8px yellow;
         overflow: visible;
     }
-
+    
     /* Hidint project colour-coded strip */
     .springloops .BigBen > header .account-name,
     .springloops .BigBen > header nav{
         box-shadow: none;
     }
-
+    
     .servicesBox {
         display: none;
     }
-
+    
     .right-wrap,
     .left-wrap {
         top: 20px;
     }
-
+    
     .left-wrap .leftContentWrap {
         padding: 0;
         max-height: none !important;
     }
-
+    
     #sideBar .sidebar-elements > ul li:before {
         display: none;
     }
-
+    
     #sideBar .sidebar-elements,
     #sideBar .sidebar-elements > ul,
     #sideBar .sidebar-elements > ul li {
@@ -162,45 +162,90 @@
         overflow: visible;
         background: #383A3C;
     }
-
+    
     #sideBar .sidebar-elements > ul li:hover {
         background: black;
     }
-
+    
     /* No max width */
     .window-size {
         width: auto;
     }
-
-
+    
+    
     .left-wrap,
     .right-wrap {
         background: transparent;
     }
-
+    
     body.fullScreen .BigBen._project #sideBar {
         top: 0;
     }
-
+    
     #sideBar .sidebar-elements > ul li {
         transition: none;
     }
+    
+    /* Dropdown menus */
+    /*.BigBen > header > nav > ul > li:hover > ul:not(.search-dropdown) {*/
+    .BigBen > header > nav > ul > li > ul:not(.search-dropdown) {
+        display: block;
+    }
+    
+    .BigBen > header > nav > ul > li > ul {
+        /*width: 130px;*/
+        min-width: 0;
+        max-width: none;
+        padding: 0;
+        box-shadow: none;
+        background: #222;
+        
+    }
+   
+    .BigBen > header > nav > ul > li > ul:hover a._hover,
+    .BigBen > header > nav > ul > li > ul:hover a:hover {
+        background-color: black;
+    }
+    
+    .BigBen > header > nav > ul > li > ul:hover a._hover,
+    .BigBen > header > nav > ul > li > ul:hover a._hover:hover {
+        background-color: black;
+    }
 
-    .btn-wrap > input[type="text"],
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    textarea,
-    select {
-        margin: 0;
-        padding: 4px;
-        vertical-align: top;
-        color: white;
-        background: black;
-        line-height: 0;
-
-        border: solid yellow 1px;
-        font-size: 12px;
+    
+    .project-tile > p {
+        display: none;
+    }
+    
+    .project-tile h2 {
+        height: auto;
+        line-height: 100%;
+    }
+    
+    .project-tile > a._acs {
+        background: none;
+        
+    }
+    .project-tile > a._acs:before {
+        content: 'GET SOURCE URL';
+    }
+    
+    .project-tile > span, .project-tile > a._acs {
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .project-tile {
+        height: 160px;
         transition: none;
+    }
+    
+    .project-tile > em {
+        display: none;
+    }
+    
+    .project-tile .users-wrap {
+        background: transparent;
     }
 }
