@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("springloops.io") {
-    
+
     /* Using default system font*/
     body,
     textarea,
@@ -13,31 +13,31 @@
         background: #222;
         color: #eee;
     }
-    
-    
+
     .event-details .event-title {
         color: inherit;
         font-size: inherit;
-        
+
     }
-    
-    h2 a ,
+
+    h2 a,
     .project-tile h2 a {
         color: inherit;
     }
-    
-    a {
-        color: lightgreen;
+
+    a,
+    .table._tasks td.ticket-title a {
+        color: #393;
         text-decoration: underline;
     }
     a:hover {
         color: green;
     }
-    
+
     .BigBen {
         background: inherit;
     }
-    
+
     /* Narrow tables to save space */
     table.table th,
     table.table td {
@@ -46,15 +46,26 @@
     .table._tasks td {
         padding: 0;
     }
-    
+
     /* Simple Flat "buttons" */
     .btn-wrap .btn {
         background-image: none;
         box-shadow: none;
-        border: 1px solid #999;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(0, 0, 0, 0.3);
         border-radius: 0;
     }
-    
+
+    .btn-wrap .btn:hover {
+        background: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: inherit;
+    }
+
+    .btn-wrap .btn > em, .btn-wrap .btn span > em {
+        color: inherit;
+    }
+
     input[type="text"],
     input[type="email"],
     input[type="password"],
@@ -62,15 +73,15 @@
     select {
         transition: none;
     }
-    
+
     .nav-dropdown {
         transition: none;
     }
-    
+
     .right-wrap, #sidebar {
         transition: none;
     }
-    
+
     /* Narrow top "all projects" link */
     .BigBen {
         top: 0px;
@@ -101,59 +112,72 @@
         right: 0;
         left: 32px;
     }
-    
-    
+
+
     .BigBen._project #sideBar {
         top: -10px;
         left: -32px;
         width: 32px;
     }
-    
+
     .BigBen #sideBar {
         overflow: hidden;
     }
-    
+
     .BigBen #sideBar:hover {
         overflow: visible;
     }
-    
-    
+
     .BigBen > header {
         height: 20px;
         overflow: hidden;
         background : #383A3C;
     }
+
+    .links-box p {
+        border-color: rgba(255, 255, 255, 0.2)    ;
+    }
+
+
+    .project-tile h2 {
+        border-color: rgba(255, 255, 255, 0.2)    ;
+    }
+
+    .project-tile .users-wrap > button {
+        background: rgba(0, 0, 0, 0.3);
+        border-color: rgba(0, 0, 0, 1);
+    }
+
     .BigBen > header:hover {
         height: auto;
         background : white;
-        box-shadow: 0 2px 8px yellow;
         overflow: visible;
     }
-    
+
     /* Hidint project colour-coded strip */
     .springloops .BigBen > header .account-name,
     .springloops .BigBen > header nav{
         box-shadow: none;
     }
-    
+
     .servicesBox {
         display: none;
     }
-    
+
     .right-wrap,
     .left-wrap {
         top: 20px;
     }
-    
+
     .left-wrap .leftContentWrap {
         padding: 0;
         max-height: none !important;
     }
-    
+
     #sideBar .sidebar-elements > ul li:before {
         display: none;
     }
-    
+
     #sideBar .sidebar-elements,
     #sideBar .sidebar-elements > ul,
     #sideBar .sidebar-elements > ul li {
@@ -162,36 +186,36 @@
         overflow: visible;
         background: #383A3C;
     }
-    
+
     #sideBar .sidebar-elements > ul li:hover {
         background: black;
     }
-    
+
     /* No max width */
     .window-size {
         width: auto;
     }
-    
-    
+
+
     .left-wrap,
     .right-wrap {
         background: transparent;
     }
-    
+
     body.fullScreen .BigBen._project #sideBar {
         top: 0;
     }
-    
+
     #sideBar .sidebar-elements > ul li {
         transition: none;
     }
-    
+
     /* Dropdown menus */
     /*.BigBen > header > nav > ul > li:hover > ul:not(.search-dropdown) {*/
     .BigBen > header > nav > ul > li > ul:not(.search-dropdown) {
         display: block;
     }
-    
+
     .BigBen > header > nav > ul > li > ul {
         /*width: 130px;*/
         min-width: 0;
@@ -199,53 +223,219 @@
         padding: 0;
         box-shadow: none;
         background: #222;
-        
+
     }
-   
-    .BigBen > header > nav > ul > li > ul:hover a._hover,
-    .BigBen > header > nav > ul > li > ul:hover a:hover {
-        background-color: black;
-    }
-    
-    .BigBen > header > nav > ul > li > ul:hover a._hover,
-    .BigBen > header > nav > ul > li > ul:hover a._hover:hover {
+
+    .BigBen > header > nav > ul > li > ul:hover a._hover, .BigBen > header > nav > ul > li > ul:hover a:hover {
         background-color: black;
     }
 
-    
+    .BigBen > header > nav > ul > li > ul:hover a._hover, .BigBen > header > nav > ul > li > ul:hover a._hover:hover {
+        background-color: black;
+    }
+
+
     .project-tile > p {
         display: none;
     }
-    
+
     .project-tile h2 {
         height: auto;
         line-height: 100%;
     }
-    
+
     .project-tile > a._acs {
         background: none;
-        
+
     }
     .project-tile > a._acs:before {
         content: 'GET SOURCE URL';
     }
-    
+
     .project-tile > span, .project-tile > a._acs {
         height: auto;
         width: 100%;
         border-radius: 0;
     }
-    
+
     .project-tile {
         height: 160px;
+        width: 168px;
         transition: none;
     }
-    
+
     .project-tile > em {
         display: none;
     }
-    
+
     .project-tile .users-wrap {
         background: transparent;
     }
+
+    .table._tasks {
+        background: transparent;
+    }
+
+    ._zebra tbody > tr:nth-child(2n+1) > td, ._zebra tbody > tr:nth-child(2n) > th {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .prv_pn {
+        background: transparent;
+    }
+
+    table.table td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .event-preview {
+        background: #222222;
+    }
+
+
+    .sidebar-wrap .close-sidebar {
+        background: darkred;
+        height: 100%;
+        width: 16px;
+        right: -16px;
+        top: 0px;
+    }
+
+    .sidebar-wrap .close-sidebar:before {
+        content: 'CLOSE';
+        background: darkred;
+    }
+
+    .sidebar-wrap .close-sidebar:hover {
+        background: red;
+    }
+
+    .sidebar-wrap .close-sidebar:hover:before {
+        background: red;
+    }
+
+    .sidebar-wrap {
+        background: #222222;
+    }
+
+    .jQ_tickerMask {
+        background: black;
+    }
+
+    .project-tile {
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    div.project-tile > h2 > a {
+        color: #aaa;
+        padding: 3px;
+        text-decoration: none;
+    }
+
+    div.project-tile > h2 {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .project-tile > span._str:hover, .project-tile > a._acs:hover {
+        background: transparent;
+    }
+
+    .jQ_scrollMe {
+        overflow: visible;
+        overflow-x: hidden;
+        height: auto !important;
+    }
+
+    .jQ_rowColumns {
+        transition: none;
+    }
+
+    #ticketDesk .right-wrap {
+        overflow: scroll;
+    }
+
+    .table._tasks td.ticket-title a {
+        font-size: 14px;
+    }
+
+
+    body.external.login {
+        background: #111;
+    }
+
+    body.external .register-wrap, body.external .login-wrap {
+        background: #222;
+        border: none;
+    }
+    .external-top-info h2 {
+        color: inherit;
+    }
+
+    .project-tile:hover {
+        border-color: rgba(255, 255, 255, 0.4) !important;
+    }
+
+    .log-wrap input[type="password"]:focus,
+    .log-wrap input[type="email"]:focus,
+    .log-wrap input[type="text"]:focus,
+    .existing-log-wrap input[type="password"]:focus,
+    .existing-log-wrap input[type="email"]:focus,
+    .existing-log-wrap input[type="text"]:focus {
+        background: #222;
+    }
+
+    body.external .login-wrap .external-app-logo {
+        display: none;
+    }
+
+    body.external.springloops .login-wrap:before {
+        display: none;
+    }
+
+    .project-tile .users-wrap {
+        padding: 0;
+        height: auto;
+    }
+
+    .BigBen > header > nav,
+    .springloops .BigBen > header .account-name {
+        background: #333;
+    }
+
+    .BigBen > header .account-name .name {
+        color: #bbb;
+    }
+
+    .BigBen > header > nav > ul > li:hover > a {
+        color: #bbb;
+    }
+
+    .project-tile .users-wrap > a {
+        margin: 0;
+        display: inline-block;
+        float: none;
+    }
+
+    .project-tile .users-wrap .in-touch {
+        margin: 0;
+        display: inline-block;
+        float: none;
+    }
+
+    .project-tile .stack-a {
+        display: none;
+    }
+
+    .project-tile .users-wrap {
+        text-align: center;
+    }
+
+    .BigBen > header > nav > ul a:hover {
+        color: #eee;
+    }
+
+    .BigBen > header > nav > ul > li > ul a {
+        color: #bbb;
+    }
+
 }
