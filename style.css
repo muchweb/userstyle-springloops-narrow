@@ -530,4 +530,48 @@
     .actionBar > .btn-oce {
         border-color: rgba(255, 255, 255, 0.2);
     }
+    
+    .ticket-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    .ticket-card .info-action {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .ticket-simple {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .ticket-simple.low {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .ticket-simple.minor {
+        border-color: rgba(255, 255, 255, 0);
+    }
+    
+    .ticket-simple > p {
+       background: #333;
+    }
+    
+    .ticket-simple .t-title {
+        color: #bbb !important;
+    }
+    
+    .sts {
+        background: rgba(0, 0, 0, 0.5);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: none;
+    }
+    
+    .ticket-simple.act_prv, .ticket-simple.selTic, .ticket-card.act_prv, .ticket-card.selTic {
+        background: rgba(0, 0, 0, 0.4);
+    }
+    
+    .ticket-simple.act_prv > p, .ticket-simple.selTic > p, .ticket-card.act_prv > p, .ticket-card.selTic > p {
+        background: #111;
+    }
 }
