@@ -14,11 +14,9 @@
         color: #eee;
     }
     
-    
     .event-details .event-title {
         color: inherit;
         font-size: inherit;
-        
     }
     
     h2 a ,
@@ -31,6 +29,7 @@
         color: #393;
         text-decoration: underline;
     }
+    
     a:hover {
         color: green;
     }
@@ -114,7 +113,6 @@
         left: 32px;
     }
     
-    
     .BigBen._project #sideBar {
         top: -10px;
         left: -32px;
@@ -129,7 +127,6 @@
         overflow: visible;
     }
     
-    
     .BigBen > header {
         height: 20px;
         overflow: hidden;
@@ -140,7 +137,6 @@
        border-color: rgba(255, 255, 255, 0.2)    ;
     }
     
-    
     .project-tile h2 {
        border-color: rgba(255, 255, 255, 0.2)    ;
     }
@@ -149,7 +145,6 @@
         background: rgba(0, 0, 0, 0.3);
         border-color: rgba(0, 0, 0, 1);
     }
-    
     
     .BigBen > header:hover {
         height: auto;
@@ -229,29 +224,28 @@
         
     }
    
-        .BigBen > header > nav > ul > li > ul:hover a._hover, .BigBen > header > nav > ul > li > ul:hover a:hover {
-    background-color: black;
-}
+    .BigBen > header > nav > ul > li > ul:hover a._hover, .BigBen > header > nav > ul > li > ul:hover a:hover {
+        background-color: black;
+    }
     
     .BigBen > header > nav > ul > li > ul:hover a._hover, .BigBen > header > nav > ul > li > ul:hover a._hover:hover {
-    background-color: black;
-}
+        background-color: black;
+    }
 
-    
     .project-tile > p {
         display: none;
     }
     
     .project-tile h2 {
-    height: auto;
-    line-height: 100%;
+        height: auto;
+       line-height: 100%;
     }
     
     .project-tile > a._acs {
         background: none;
-        
     }
-        .project-tile > a._acs:before {
+    
+    .project-tile > a._acs:before {
         content: 'GET SOURCE URL';
     }
     
@@ -259,7 +253,7 @@
     height: auto;
     width: 100%;
         border-radius: 0;
-}
+    }
     
     .project-tile {
         height: 160px;
@@ -295,29 +289,27 @@
         background: #222222;
     }
     
-    
     .sidebar-wrap .close-sidebar {
-    background: darkred;
-    height: 100%;
-    width: 16px;
-    right: -16px;
-    top: 0px;
+        background: darkred;
+        height: 100%;
+        width: 16px;
+        right: -16px;
+        top: 0px;
     }
     
-        .sidebar-wrap .close-sidebar:before {
-            content: 'CLOSE';
-            background: darkred;
-        }
+    .sidebar-wrap .close-sidebar:before {
+        content: 'CLOSE';
+        background: darkred;
+    }
     
     .sidebar-wrap .close-sidebar:hover {
         background: red;
     }
     
     
-            .sidebar-wrap .close-sidebar:hover:before {
-     
-            background: red;
-        }
+    .sidebar-wrap .close-sidebar:hover:before {
+        background: red;
+    }
     
     .sidebar-wrap { 
         background: #222222;
@@ -332,21 +324,19 @@
     }
     
     
-    
-    
     div.project-tile > h2 > a {
         color: #aaa;
         padding: 3px;
         text-decoration: none;
     }
-        div.project-tile > h2 {
+    div.project-tile > h2 {
         background: rgba(255, 255, 255, 0.1);
     }
 
     
     .project-tile > span._str:hover, .project-tile > a._acs:hover {
-   background: transparent;
-}
+       background: transparent;
+    }
     
     .jQ_scrollMe {
         overflow: visible;
@@ -573,5 +563,9 @@
     
     .ticket-simple.act_prv > p, .ticket-simple.selTic > p, .ticket-card.act_prv > p, .ticket-card.selTic > p {
         background: #111;
+    }
+    
+    .sidebar-wrap .project-list:hover {
+        background-color: rgba(255, 255, 255, 0.1);
     }
 }
