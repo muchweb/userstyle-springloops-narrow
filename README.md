@@ -1,5 +1,12 @@
-# Narrower (wrecked) Springloops 
+# Narrow Dark Springloops 
+![screenshot](https://cloud.githubusercontent.com/assets/7157049/4762330/bb16cafe-5b00-11e4-8670-736b53a73615.png)
 
-![screenshot](https://df6a.https.cdn.softlayer.net/80DF6A/static.userstyles.org/style_screenshot_thumbnails/105014_after.png)
+## Installation
 
-[Install it on Userstyles](https://userstyles.org/styles/105014/narrower-wrecked-springloops)
+Get it from [Userstyles](https://userstyles.org/styles/105014/narrower-wrecked-springloops)
+
+## License
+
+GPLv3+
+
+
