@@ -557,15 +557,55 @@
         box-shadow: none;
     }
     
-    .ticket-simple.act_prv, .ticket-simple.selTic, .ticket-card.act_prv, .ticket-card.selTic {
+    .ticket-simple.act_prv,
+    .ticket-simple.selTic,
+    .ticket-card.act_prv,
+    .ticket-card.selTic {
         background: rgba(0, 0, 0, 0.4);
     }
     
-    .ticket-simple.act_prv > p, .ticket-simple.selTic > p, .ticket-card.act_prv > p, .ticket-card.selTic > p {
+    .ticket-simple.act_prv > p, .ticket-simple.selTic > p,     
+    .ticket-card.act_prv > p, .ticket-card.selTic > p {
         background: #111;
     }
     
     .sidebar-wrap .project-list:hover {
         background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .ui-datepicker {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .int1 a { background-color:rgba(160, 234, 190, 0.2); }
+    .int2 a { background-color:rgba(250, 219, 98, 0.2); }
+    .int3 a { background-color:rgba(251, 179, 55, 0.2); }
+    .int4 a { background-color:rgba(255, 116, 58, 0.2); }
+    .int5 a { background-color:rgba(254, 73, 67, 0.2); }
+    .int6 a { background-color:rgba(170, 14, 0, 0.2); }
+    
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+        color: inherit;
+    }
+    
+    .btn-wrap .btn._main, .btn-wrap .btn._action,
+    .btn-wrap .btn._mega {
+        background: #777;
+        color: #FFF;
+        text-shadow: none;
+        border: 1px solid #aaa;
+    }
+    
+    .stackedBoxes-wrap {
+        background: none;
+    }
+    
+    .new-ticket-blank {
+        background: none;
+        border: none;
+    }
+    
+    .cloud-notice.jQ_msg {
+        display: none;
     }
 }
